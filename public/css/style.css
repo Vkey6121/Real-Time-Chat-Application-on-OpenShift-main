@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #aaa;
+  font-size: 12px;  
+  font: 8pt/150% Tahoma, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+input, button, textarea {
+  border: 0;
+}
+
+.content {
+  height:80%;
+
+  position: relative;
+  background-color: #ddd;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.notice {
+  background-color: #546; /* purple */
+  color: white;
+  height: 10%;
+}
+
+.controls {
+  position: relative;  
+  height: 10%;
+}
+  .controls input {
+    height: 100%;
+  }
+  .controls input.field {
+    width: 80%;
+  }
+  .controls input.send {
+    width: 20%;
+  }
+
+.content,
+.message,
+.notice,
+input.field
+{
+  padding: 5px;
+}
+
+.message {
+  background: #e5e5e5;
+}
+.message:nth-child(2n+1) {
+  background-color: #eee;
+}
+.message.system {
+  background: yellow;
+}
+.message.private {
+  background: purple;
+}
+
+.message .text,
+.message .time {
+  float: left;
+}
+
+.message .name {}
+.message .text {
+  width: 80%;
+}
+
+.message .name {
+  color: #0078ca;
+}
+  .message .name b { /* nickname */
+
+  }
+  .message .name span { /* socket id */
+    color: #999;
+    padding-left: 10px;
+    font-size: 0.750em;
+  }
+  .message .name span:before {
+    content: 'id: ';
+  }
+
+.message .time {
+  width:20%;
+  color: #999;
+  text-align: right;
+}
+
+/* from the html5boilerplate */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/*
+@media only screen and (min-width:320px)  { body{ font-size:1.333em } }
+@media only screen and (min-width:768px)  { body{ font-size:1.167em } }
+@media only screen and (min-width:1024px) { body{ font-size:1em     } }
+@media only screen and (min-width:1900px) { body{ font-size:1.500em } }
+*/

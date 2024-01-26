@@ -1,0 +1,30 @@
+{
+  "name": "real-time-web-chat",
+  "version": "1.0.12",
+  "description": "Real time web chat",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "chat"
+  ],
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "express": "*",
+    "jade": "latest"
+  },
+  "author": {
+    "name": "Sim & Nic",
+    "email": "",
+    "url":  "http://simonewebdesign.it/"
+  },
+  "homepage": "http://rtwc-simone.rhcloud.com/",
+  "repository" : { 
+    "type": "git",
+    "url": "https://github.com/simonewebdesign/real-time-web-chat.git"
+  }
+}

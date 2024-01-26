@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title='Real Time Chat'
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/style.css')
+
+  body
+    .content
+      .messages
+    .notice      
+    .controls
+      textarea.field(placeholder='Send a message')
+      input.send(type='button', value='send')
+      //button.enable-notifications Enable desktop notifications
+
+    script(src='require.js')
+    script(src='main.js')
